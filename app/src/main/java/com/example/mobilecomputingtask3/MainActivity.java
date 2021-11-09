@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         int number= dice.nextInt(28);
         text=findViewById(R.id.textView);
+        text.setText(ArabicLetters[number]);
 
         move=findViewById(R.id.button);
         move.setOnClickListener(new View.OnClickListener() {
