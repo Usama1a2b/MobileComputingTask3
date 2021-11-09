@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(ArabicLetters[number].equals("ا") || ArabicLetters[number].equals("ه") || ArabicLetters[number].equals("ع") || ArabicLetters[number].equals("ح") || ArabicLetters[number].equals("غ") || ArabicLetters[number].equals("خ") )
                 {
+                    Intent intent=new Intent(MainActivity.this,MainActivity2.class);
+                    startActivity(intent);
 
                 }
             }
