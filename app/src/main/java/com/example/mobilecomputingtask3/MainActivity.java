@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        int e=GlobalVariable.glob;
+        String s=String.valueOf(e);
+        text2=findViewById(R.id.textView2);
+        text2.setText(s);
+
         //random number generated
         int number= dice.nextInt(28);
         text=findViewById(R.id.textView);
@@ -41,16 +46,14 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
 
                 }
+                else{
+                    Intent intent=new Intent(MainActivity.this,MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
 
-
-
-        /*int e=GlobalVariable.glob;
-        String s=String.valueOf(e);
-        text2=findViewById(R.id.textView2);
-        text2.setText(s);*/
 
         //tongue section
         move3=findViewById(R.id.button3);
@@ -64,8 +67,13 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent2);
 
                 }
+                else {
+                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
+
 
 
 
