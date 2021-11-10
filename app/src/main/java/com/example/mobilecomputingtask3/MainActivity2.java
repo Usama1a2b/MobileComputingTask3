@@ -47,6 +47,21 @@ public class MainActivity2 extends AppCompatActivity {
         });
 
 
+        btn3=findViewById(R.id.button9);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(alphabet.equals("غ") || alphabet.equals("خ"))
+                {
+                    GlobalVariable.glob++;
+                    intent2=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent2);
+
+                }
+            }
+        });
+
+
 
 
 
