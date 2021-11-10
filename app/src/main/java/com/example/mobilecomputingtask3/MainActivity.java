@@ -89,7 +89,10 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent2);
 
                 }
-
+                else {
+                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
