@@ -32,6 +32,20 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
+        btn2=findViewById(R.id.button8);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(alphabet.equals("ع") || alphabet.equals("ح"))
+                {
+                    GlobalVariable.glob++;
+                    intent2=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent2);
+
+                }
+            }
+        });
+
 
 
 
