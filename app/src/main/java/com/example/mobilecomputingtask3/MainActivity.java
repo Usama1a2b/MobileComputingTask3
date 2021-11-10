@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         //Throat section
         move2=findViewById(R.id.button2);
         move2.setOnClickListener(new View.OnClickListener() {
+
+            //throat section
             @Override
             public void onClick(View v) {
                 if(ArabicLetters[number].equals("ا") || ArabicLetters[number].equals("ه") || ArabicLetters[number].equals("ع") || ArabicLetters[number].equals("ح") || ArabicLetters[number].equals("غ") || ArabicLetters[number].equals("خ") )
@@ -55,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        //tongue section
+        //Tongue section
         move3=findViewById(R.id.button3);
         move3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +77,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //Lip section
+        move4=findViewById(R.id.button4);
+        move4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(ArabicLetters[number].equals("ف") || ArabicLetters[number].equals("ب") || ArabicLetters[number].equals("م") || ArabicLetters[number].equals("و") )
+                {
+
+                }
+            }
+        });
 
 
     }
