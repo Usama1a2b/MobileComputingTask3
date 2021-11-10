@@ -47,5 +47,26 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        /*int e=GlobalVariable.glob;
+        String s=String.valueOf(e);
+        text2=findViewById(R.id.textView2);
+        text2.setText(s);*/
+
+        //tongue section
+        move3=findViewById(R.id.button3);
+        move3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(ArabicLetters[number].equals("ض") || ArabicLetters[number].equals("ل") || ArabicLetters[number].equals("ن") || ArabicLetters[number].equals("ر") || ArabicLetters[number].equals("ت") || ArabicLetters[number].equals("د") || ArabicLetters[number].equals("ط") || ArabicLetters[number].equals("ظ") || ArabicLetters[number].equals("ذ") || ArabicLetters[number].equals("ث") || ArabicLetters[number].equals("ص") || ArabicLetters[number].equals("ز") || ArabicLetters[number].equals("س") )
+                {
+                    Intent intent2=new Intent(MainActivity.this,MainActivity2.class);
+                    startActivity(intent2);
+
+                }
+            }
+        });
+
+
+
     }
 }
