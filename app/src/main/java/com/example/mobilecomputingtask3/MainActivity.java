@@ -84,8 +84,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(ArabicLetters[number].equals("ف") || ArabicLetters[number].equals("ب") || ArabicLetters[number].equals("م") || ArabicLetters[number].equals("و") )
                 {
+                    Intent intent2=new Intent(MainActivity.this,MainActivity3.class);
+                    intent2.putExtra("keyname2",ArabicLetters[number]);
+                    startActivity(intent2);
 
                 }
+
             }
         });
 
