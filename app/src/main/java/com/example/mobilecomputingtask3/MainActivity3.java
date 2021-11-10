@@ -74,6 +74,25 @@ public class MainActivity3 extends AppCompatActivity {
             }
         });
 
+        btn4=findViewById(R.id.button16);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(alphabet.equals("ر"))
+                {
+                    GlobalVariable.glob++;
+                    intent=new Intent(MainActivity3.this,MainActivity.class);
+                    startActivity(intent);
+
+                }
+                else
+                {
+                    intent=new Intent(MainActivity3.this,MainActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
 
 
     }
