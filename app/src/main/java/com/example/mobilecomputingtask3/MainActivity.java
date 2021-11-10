@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 if(ArabicLetters[number].equals("ض") || ArabicLetters[number].equals("ل") || ArabicLetters[number].equals("ن") || ArabicLetters[number].equals("ر") || ArabicLetters[number].equals("ت") || ArabicLetters[number].equals("د") || ArabicLetters[number].equals("ط") || ArabicLetters[number].equals("ظ") || ArabicLetters[number].equals("ذ") || ArabicLetters[number].equals("ث") || ArabicLetters[number].equals("ص") || ArabicLetters[number].equals("ز") || ArabicLetters[number].equals("س") )
                 {
                     Intent intent2=new Intent(MainActivity.this,MainActivity3.class);
+                    intent2.putExtra("keyname2",ArabicLetters[number]);
                     startActivity(intent2);
 
                 }
