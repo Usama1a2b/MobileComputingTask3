@@ -16,8 +16,27 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
-
         String alphabet=getIntent().getStringExtra("keyname2");
+        btn1=findViewById(R.id.button10);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(alphabet.equals("ض"))
+                {
+                    GlobalVariable.glob++;
+                    intent=new Intent(MainActivity3.this,MainActivity.class);
+                    startActivity(intent);
+
+                }
+                else
+                {
+                    intent=new Intent(MainActivity3.this,MainActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
+
 
     }
 }
