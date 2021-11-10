@@ -16,6 +16,7 @@ public class MainActivity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
+
         String alphabet=getIntent().getStringExtra("keyname2");
 
     }
