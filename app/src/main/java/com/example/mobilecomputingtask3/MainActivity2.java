@@ -18,6 +18,20 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         String alphabet=getIntent().getStringExtra("keyname");
 
+        btn1=findViewById(R.id.button7);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(alphabet.equals("ا") || alphabet.equals("ه"))
+                {
+                    GlobalVariable.glob++;
+                    intent2=new Intent(MainActivity2.this,MainActivity.class);
+                    startActivity(intent2);
+
+                }
+            }
+        });
+
 
 
 
