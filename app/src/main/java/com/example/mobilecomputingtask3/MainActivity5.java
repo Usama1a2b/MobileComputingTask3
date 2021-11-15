@@ -41,25 +41,26 @@ public class MainActivity5 extends AppCompatActivity {
             //throat section
             @Override
             public void onClick(View v) {
-                if(ArabicLetters[number].equals("ا") || ArabicLetters[number].equals("ه") || ArabicLetters[number].equals("ع") || ArabicLetters[number].equals("ح") || ArabicLetters[number].equals("غ") || ArabicLetters[number].equals("خ") )
+                Intent intent;
+                if(ArabicLetters[number].equals("ا") || ArabicLetters[number].equals("ه") || ArabicLetters[number].equals("ع") || ArabicLetters[number].equals("ح" )|| ArabicLetters[number].equals("غ") || ArabicLetters[number].equals("خ") )
                 {
-                    Intent intent=new Intent(MainActivity5.this,MainActivity2.class);
+                    intent = new Intent(MainActivity5.this, MainActivity2.class);
                     intent.putExtra("keyname",ArabicLetters[number]);
                     startActivity(intent);
-
                 }
                 else{
-                    Intent intent=new Intent(MainActivity5.this,MainActivity5.class);
+                    intent = new Intent(MainActivity5.this, MainActivity5.class);
                     startActivity(intent);
                 }
+
             }
         });
 
 
 
         //Tongue section
-        move3=findViewById(R.id.button21);
-        move3.setOnClickListener(new View.OnClickListener() {
+        move5=findViewById(R.id.button21);
+        move5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(ArabicLetters[number].equals("ض") || ArabicLetters[number].equals("ل") || ArabicLetters[number].equals("ن") || ArabicLetters[number].equals("ر") || ArabicLetters[number].equals("ت") || ArabicLetters[number].equals("د") || ArabicLetters[number].equals("ط") || ArabicLetters[number].equals("ظ") || ArabicLetters[number].equals("ذ") || ArabicLetters[number].equals("ث") || ArabicLetters[number].equals("ص") || ArabicLetters[number].equals("ز") || ArabicLetters[number].equals("س") )
@@ -77,14 +78,33 @@ public class MainActivity5 extends AppCompatActivity {
         });
 
 
-        //Lip section
+        //Nose section
         move4=findViewById(R.id.button26);
         move4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ArabicLetters[number].equals("ف") || ArabicLetters[number].equals("ب") || ArabicLetters[number].equals("م") || ArabicLetters[number].equals("و") )
+                if(ArabicLetters[number].equals("م")||ArabicLetters[number].equals("ن") )
                 {
-                    Intent intent2=new Intent(MainActivity5.this,MainActivity3.class);
+                    GlobalVariable.glob++;
+                    Intent intent = new Intent(MainActivity5.this, MainActivity5.class);
+                    startActivity(intent);
+
+                }
+                else {
+                    Intent intent = new Intent(MainActivity5.this, MainActivity5.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
+        //Lip section
+        move4=findViewById(R.id.button25);
+        move4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(ArabicLetters[number].equals("ف") || ArabicLetters[number].equals("ب") || ArabicLetters[number].equals("و") )
+                {
+                    Intent intent2=new Intent(MainActivity5.this,MainActivity6.class);
                     intent2.putExtra("keyname2",ArabicLetters[number]);
                     startActivity(intent2);
 
