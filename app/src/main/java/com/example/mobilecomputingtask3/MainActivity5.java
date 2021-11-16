@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class MainActivity5 extends AppCompatActivity {
 
-    Button move2,move3,move4,move5,move6;
+    Button move2,move3,move4,move5,move6,move7;
     TextView text,text2;
     String [] ArabicLetters={"ا","ب","ت","ث","ج","ح","خ","د","ذ","ر","ز","س","ش","ص","ض","ط","ظ","ع","غ","ف","ق","ك","ل","م","ن","ه","و","ي"};
     Random dice=new Random();
@@ -132,6 +132,16 @@ public class MainActivity5 extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity5.this, MainActivity5.class);
                     startActivity(intent);
                 }
+            }
+        });
+
+        move7=findViewById(R.id.button6);
+        move7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GlobalVariable.glob=0;
+                Intent intent = new Intent(MainActivity5.this, MainActivity.class);
+                startActivity(intent);
             }
         });
 
