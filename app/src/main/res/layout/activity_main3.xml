@@ -10,58 +10,59 @@
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="44dp"
         android:text="One side of the tongue touching the molar teeth"
-        app:layout_constraintBottom_toTopOf="@+id/button11"
-        app:layout_constraintEnd_toEndOf="@+id/button11" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="129dp"
-        android:layout_marginEnd="41dp"
+        android:layout_marginTop="40dp"
         android:text="Rounded tip of the tongue touching the base of the frontal 8 teeth"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="32dp"
         android:text="Tip of the tongue touching the tip of the frontal 2 teeth"
-        app:layout_constraintEnd_toEndOf="@+id/button15"
-        app:layout_constraintTop_toBottomOf="@+id/button15" />
+        app:layout_constraintTop_toBottomOf="@+id/button15"
+        tools:layout_editor_absoluteX="46dp" />
 
     <Button
         android:id="@+id/button14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="156dp"
+        android:layout_marginTop="32dp"
         android:text="Tip of the tongue comes between the front top and bottom teeth"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
 
     <Button
         android:id="@+id/button15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="41dp"
+        android:layout_marginTop="36dp"
         android:text="Tip of the tongue touching the base of the front 2 teeth"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button16" />
 
     <Button
         android:id="@+id/button16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Rounded tip of the tongue and some portion near it touching the base of the frontal 4 teeth"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="233dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

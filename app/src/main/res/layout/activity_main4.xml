@@ -10,31 +10,30 @@
         android:id="@+id/button17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="85dp" />
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="104dp"
+        android:text="Base of Tongue which is near Uvula  touching the mouth roof"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="164dp" />
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="40dp"
+        android:text="Portion of Tongue near its base touching the roof of mouth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
 
     <Button
         android:id="@+id/button19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="259dp" />
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="52dp"
+        android:text="Tongue touching the center of  the mouth roof"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
 
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="355dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

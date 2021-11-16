@@ -9,14 +9,14 @@ import android.widget.Button;
 
 public class MainActivity6 extends AppCompatActivity {
 
-    Button btn1,btn2,btn3,btn4;
+    Button btn1,btn2,btn4;
     Intent intent2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
 
-        String alphabet=getIntent().getStringExtra("keyname");
+        String alphabet=getIntent().getStringExtra("keyname2");
 
         btn1=findViewById(R.id.button4);
         btn1.setOnClickListener(new View.OnClickListener() {
@@ -25,7 +25,7 @@ public class MainActivity6 extends AppCompatActivity {
                 if(alphabet.equals("ف"))
                 {
                     GlobalVariable.glob++;
-                    intent2=new Intent(MainActivity6.this,MainActivity.class);
+                    intent2=new Intent(MainActivity6.this,MainActivity5.class);
                     startActivity(intent2);
 
                 }
@@ -39,7 +39,7 @@ public class MainActivity6 extends AppCompatActivity {
                 if(alphabet.equals("ب"))
                 {
                     GlobalVariable.glob++;
-                    intent2=new Intent(MainActivity6.this,MainActivity.class);
+                    intent2=new Intent(MainActivity6.this,MainActivity5.class);
                     startActivity(intent2);
 
                 }
@@ -56,7 +56,7 @@ public class MainActivity6 extends AppCompatActivity {
                 if(alphabet.equals("و"))
                 {
                     GlobalVariable.glob++;
-                    intent2=new Intent(MainActivity6.this,MainActivity.class);
+                    intent2=new Intent(MainActivity6.this,MainActivity5.class);
                     startActivity(intent2);
 
                 }

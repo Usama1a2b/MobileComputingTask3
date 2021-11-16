@@ -63,7 +63,7 @@ public class MainActivity5 extends AppCompatActivity {
         move5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(ArabicLetters[number].equals("ض") || ArabicLetters[number].equals("ل") || ArabicLetters[number].equals("ن") || ArabicLetters[number].equals("ر") || ArabicLetters[number].equals("ت") || ArabicLetters[number].equals("د") || ArabicLetters[number].equals("ط") || ArabicLetters[number].equals("ظ") || ArabicLetters[number].equals("ذ") || ArabicLetters[number].equals("ث") || ArabicLetters[number].equals("ص") || ArabicLetters[number].equals("ز") || ArabicLetters[number].equals("س") )
+                if(ArabicLetters[number].equals("ض") || ArabicLetters[number].equals("ل")  || ArabicLetters[number].equals("ر") || ArabicLetters[number].equals("ت") || ArabicLetters[number].equals("د") || ArabicLetters[number].equals("ط") || ArabicLetters[number].equals("ظ") || ArabicLetters[number].equals("ذ") || ArabicLetters[number].equals("ث") || ArabicLetters[number].equals("ص") || ArabicLetters[number].equals("ز") || ArabicLetters[number].equals("س") )
                 {
                     Intent intent2=new Intent(MainActivity5.this,MainActivity3.class);
                     intent2.putExtra("keyname2",ArabicLetters[number]);
@@ -79,8 +79,8 @@ public class MainActivity5 extends AppCompatActivity {
 
 
         //Nose section
-        move4=findViewById(R.id.button26);
-        move4.setOnClickListener(new View.OnClickListener() {
+        move3=findViewById(R.id.button25);
+        move3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(ArabicLetters[number].equals("م")||ArabicLetters[number].equals("ن") )
@@ -98,7 +98,7 @@ public class MainActivity5 extends AppCompatActivity {
         });
 
         //Lip section
-        move4=findViewById(R.id.button25);
+        move4=findViewById(R.id.button26);
         move4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -116,6 +116,24 @@ public class MainActivity5 extends AppCompatActivity {
             }
         });
 
+        //Mouth section
+        move6=findViewById(R.id.button22);
+        move6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(ArabicLetters[number].equals("ق") || ArabicLetters[number].equals("ك") || ArabicLetters[number].equals("ج") || ArabicLetters[number].equals("ش") || ArabicLetters[number].equals("ي") )
+                {
+                    Intent intent2=new Intent(MainActivity5.this,MainActivity4.class);
+                    intent2.putExtra("keyname2",ArabicLetters[number]);
+                    startActivity(intent2);
+
+                }
+                else {
+                    Intent intent = new Intent(MainActivity5.this, MainActivity5.class);
+                    startActivity(intent);
+                }
+            }
+        });
 
     }
 }

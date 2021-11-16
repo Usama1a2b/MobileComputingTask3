@@ -24,13 +24,13 @@ public class MainActivity3 extends AppCompatActivity {
                 if(alphabet.equals("ض"))
                 {
                     GlobalVariable.glob++;
-                    intent=new Intent(MainActivity3.this,MainActivity.class);
+                    intent=new Intent(MainActivity3.this,MainActivity5.class);
                     startActivity(intent);
 
                 }
                 else
                 {
-                    intent=new Intent(MainActivity3.this,MainActivity.class);
+                    intent=new Intent(MainActivity3.this,MainActivity5.class);
                     startActivity(intent);
                 }
             }
@@ -43,13 +43,13 @@ public class MainActivity3 extends AppCompatActivity {
                 if(alphabet.equals("ل"))
                 {
                     GlobalVariable.glob++;
-                    intent=new Intent(MainActivity3.this,MainActivity.class);
+                    intent=new Intent(MainActivity3.this,MainActivity5.class);
                     startActivity(intent);
 
                 }
                 else
                 {
-                    intent=new Intent(MainActivity3.this,MainActivity.class);
+                    intent=new Intent(MainActivity3.this,MainActivity5.class);
                     startActivity(intent);
                 }
             }

@@ -25,7 +25,7 @@ public class MainActivity2 extends AppCompatActivity {
                 if(alphabet.equals("ا") || alphabet.equals("ه"))
                 {
                     GlobalVariable.glob++;
-                    intent2=new Intent(MainActivity2.this,MainActivity.class);
+                    intent2=new Intent(MainActivity2.this,MainActivity5.class);
                     startActivity(intent2);
 
                 }
@@ -39,7 +39,7 @@ public class MainActivity2 extends AppCompatActivity {
                 if(alphabet.equals("ع") || alphabet.equals("ح"))
                 {
                     GlobalVariable.glob++;
-                    intent2=new Intent(MainActivity2.this,MainActivity.class);
+                    intent2=new Intent(MainActivity2.this,MainActivity5.class);
                     startActivity(intent2);
 
                 }
@@ -54,7 +54,7 @@ public class MainActivity2 extends AppCompatActivity {
                 if(alphabet.equals("غ") || alphabet.equals("خ"))
                 {
                     GlobalVariable.glob++;
-                    intent2=new Intent(MainActivity2.this,MainActivity.class);
+                    intent2=new Intent(MainActivity2.this,MainActivity5.class);
                     startActivity(intent2);
 
                 }
